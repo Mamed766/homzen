@@ -1,0 +1,227 @@
+@use "../base/" as *;
+@use "../utils/" as *;
+
+.navbar__first {
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: $envBg;
+  svg {
+    width: 10rem;
+  }
+
+  button {
+    padding: $envPad;
+    border-radius: $defaultBtnRad;
+    background-color: $envBtn;
+    color: #fff;
+    border: 1px solid transparent;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
+
+// .navbar__second {
+//   margin-top: 5rem;
+// }
+
+.navbar__second {
+  z-index: 99999;
+  background-color: #fff;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e3e3e3;
+  // background-color: red;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 4rem;
+  &--logo {
+    img {
+      height: 2.5rem;
+    }
+  }
+
+  &--list {
+    ul {
+      display: flex;
+      list-style: none;
+
+      &:first-child {
+        gap: 2.5rem;
+      }
+      position: relative;
+      i {
+        transform: translateY(1px);
+      }
+
+      // & > li {
+      //   height: 4rem;
+      // }
+      .list {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        height: 5rem;
+        position: relative;
+      }
+
+      .list__home {
+        margin-top: 23rem;
+        width: 15rem;
+      }
+
+      .list__listing {
+        width: 20rem;
+        margin-top: 23rem;
+      }
+
+      .list__pro {
+        width: 20rem;
+      }
+      .list__pages {
+        width: 20rem;
+      }
+
+      .list__blog {
+        margin-top: 15rem;
+        width: 20rem;
+      }
+
+      .list__dashboard {
+        margin-top: 25.5rem;
+        width: 13rem;
+      }
+
+      li {
+        cursor: pointer;
+
+        &:before {
+          display: block;
+          content: "";
+          width: 0;
+          height: 3px;
+          bottom: 0px;
+          left: 0;
+          // bottom: -3px;
+          z-index: 0;
+          position: absolute;
+          background-color: $red;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          background-position: 0%;
+          &:before {
+            width: 100%;
+          }
+        }
+        ul {
+          // display: none;
+          visibility: hidden;
+          position: absolute;
+
+          flex-direction: column;
+          background-color: #fff;
+          border: 1px solid #e3e3e3;
+          border-top: none;
+          border-bottom-left-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
+
+          opacity: 0;
+          transition: opacity 0.25s ease-in-out;
+
+          margin-top: 23rem;
+          li {
+            border-bottom: 1px solid #e3e3e3;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: gray;
+            // gap: 2rem;
+            position: relative;
+
+            i {
+              visibility: hidden;
+              position: absolute;
+              left: 0.5rem;
+              opacity: 0;
+              transform: rotate(-45deg);
+            }
+            transition: all 0.25s ease-in-out;
+            &:hover {
+              color: $red;
+              gap: 2rem;
+              transition: all 0.25s ease-in-out;
+              i {
+                transition: all 0.2s ease-in-out;
+                opacity: 1;
+                visibility: visible;
+                // display: flex;
+              }
+            }
+            padding: 0.5rem 2rem;
+          }
+          border-bottom: 1px solid #e3e3e3;
+        }
+        &:hover ul {
+          display: flex;
+          visibility: visible;
+          opacity: 1;
+          animation: fadeIn 0.25s ease-in-out;
+        }
+      }
+    }
+  }
+
+  &--end {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+
+    div {
+      display: flex;
+      a {
+        color: black;
+        text-decoration: none;
+        transition: all 0.25s ease-in-out;
+        &:hover {
+          color: $red;
+        }
+      }
+    }
+
+    button {
+      padding: 16px 32px;
+      outline: none;
+      border: none;
+      background-color: $red;
+
+      color: white;
+      border-radius: $defaultBtnRad;
+      transition: all 0.25s ease-in-out;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
