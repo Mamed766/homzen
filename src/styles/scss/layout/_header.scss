@@ -15,6 +15,8 @@
   }
 
   button {
+    cursor: pointer;
+
     padding: $envPad;
     border-radius: $defaultBtnRad;
     background-color: $envBtn;
@@ -209,7 +211,7 @@
       border-radius: $defaultBtnRad;
       transition: all 0.25s ease-in-out;
       &:hover {
-        opacity: 0.9;
+        background-color: $btnhov;
       }
     }
   }

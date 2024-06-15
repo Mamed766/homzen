@@ -6,6 +6,10 @@
   font-family: "Poppins";
 }
 
+button {
+  cursor: pointer;
+}
+
 .navbar__first {
   z-index: 99;
   position: fixed;
@@ -20,6 +24,7 @@
   width: 10rem;
 }
 .navbar__first button {
+  cursor: pointer;
   padding: 5px 20px;
   border-radius: 0.4rem;
   background-color: #82b440;
@@ -181,7 +186,7 @@
   transition: all 0.25s ease-in-out;
 }
 .navbar__second--end button:hover {
-  opacity: 0.9;
+  background-color: #cf3710;
 }
 
 @keyframes fadeIn {
@@ -199,11 +204,11 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1;
-  padding-top: 250px;
+  padding-top: 130px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   align-items: center;
-  height: 55rem;
+  height: 52rem;
 }
 .introduction__content {
   grid-column: 2/5;
@@ -220,6 +225,10 @@
   color: white;
   padding: 16px 32px;
   border-radius: 0.4rem;
+  transition: all 0.25s ease-in-out;
+}
+.introduction__content button:hover {
+  background-color: #cf3710;
 }
 .introduction__content--animated__text {
   display: flex;
@@ -314,6 +323,10 @@
   background-color: #ed2027;
   color: white;
   border: none;
+  transition: all 0.25s ease-in-out;
+}
+.introduction__form button:hover {
+  background-color: #cf3710;
 }
 
 @keyframes cursor {
