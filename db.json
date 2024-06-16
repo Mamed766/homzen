@@ -1,34 +1,58 @@
 {
   "data": [
     {
-      "id": 1,
+      "id": "e4d4",
       "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
-      "city": "Semkir",
+      "city": "Dallas",
       "properties": "263"
     },
     {
-      "id": 2,
-      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
-      "city": "Semkir",
-      "properties": "263"
+      "id": "a914",
+      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-2.jpg",
+      "city": "Atlanta",
+      "properties": "275"
     },
     {
-      "id": 3,
-      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
-      "city": "Semkir",
-      "properties": "263"
+      "id": "fe02",
+      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-3.jpg",
+      "city": "Orlando",
+      "properties": "256"
     },
     {
-      "id": 4,
-      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
-      "city": "Semkir",
-      "properties": "263"
+      "id": "f215",
+      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-4.jpg",
+      "city": "Miami",
+      "properties": "312"
     },
     {
-      "id": 5,
-      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
-      "city": "Semkir",
-      "properties": "263"
+      "id": "761e",
+      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-5.jpg",
+      "city": "Houston",
+      "properties": "237"
+    },
+    {
+      "id": "dc1a",
+      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-6.jpg",
+      "city": "Phoenix",
+      "properties": "221"
+    },
+    {
+      "id": "4e2c",
+      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-7.jpg",
+      "city": "Seattle",
+      "properties": "188"
+    },
+    {
+      "id": "63d6",
+      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-8.jpg",
+      "city": "Denver",
+      "properties": "193"
+    },
+    {
+      "id": "0984",
+      "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-9.jpg",
+      "city": "Austin",
+      "properties": "309"
     }
   ]
 }
