@@ -24,7 +24,7 @@
 
 .houses__container {
   &--card {
-    background-color: red;
+    background-color: white;
     border-radius: 0.5rem;
     overflow: hidden;
     width: 25rem;
@@ -95,6 +95,43 @@
               background-color: $red;
             }
           }
+        }
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      padding: 2px 8px;
+
+      & > p {
+        color: gray;
+        font-size: 14px;
+      }
+
+      i {
+        color: gray;
+      }
+
+      &--flex {
+        display: flex;
+        gap: 1.5rem;
+      }
+    }
+
+    &__content--end {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__img {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        img {
+          border-radius: 2rem;
+          height: 3rem;
+          width: 3rem;
         }
       }
     }

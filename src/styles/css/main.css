@@ -571,7 +571,7 @@ button {
 }
 
 .houses__container--card {
-  background-color: red;
+  background-color: white;
   border-radius: 0.5rem;
   overflow: hidden;
   width: 25rem;
@@ -631,6 +631,38 @@ button {
 .houses__container--card__img--content__bottom button:hover {
   color: white;
   background-color: #ed2027;
+}
+.houses__container--card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 2px 8px;
+}
+.houses__container--card__content > p {
+  color: gray;
+  font-size: 14px;
+}
+.houses__container--card__content i {
+  color: gray;
+}
+.houses__container--card__content--flex {
+  display: flex;
+  gap: 1.5rem;
+}
+.houses__container--card__content--end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.houses__container--card__content--end__img {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.houses__container--card__content--end__img img {
+  border-radius: 2rem;
+  height: 3rem;
+  width: 3rem;
 }
 
 /*# sourceMappingURL=main.css.map */
