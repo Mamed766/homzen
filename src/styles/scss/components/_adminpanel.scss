@@ -1,0 +1,41 @@
+@use "../utils" as *;
+
+.admin {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    input {
+      width: 30rem;
+      border: 1px solid #e3e3e3;
+      outline: none;
+      border-radius: 0.5rem;
+      padding: 8px 16px;
+
+      &:focus {
+        border: 1px solid $red;
+      }
+    }
+
+    button {
+      border: 1px solid #e3e3e3;
+      padding: 8px 16px;
+      background-color: $red;
+      color: white;
+      border-radius: 0.5rem;
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        background-color: $btnhov;
+      }
+    }
+  }
+}

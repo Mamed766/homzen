@@ -95,6 +95,26 @@
     }
   }
 }
+
+.cards__create {
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  a {
+    padding: 8px 16px;
+    border: none;
+    color: white;
+    border-radius: 0.5rem;
+    transition: all 0.25s ease-in-out;
+    background-color: $red;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $btnhov;
+    }
+  }
+}
 @keyframes fadeOut {
   from {
     opacity: 0;

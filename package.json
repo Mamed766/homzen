@@ -1,9 +1,11 @@
 {
   "dependencies": {
+    "json-server": "^1.0.0-beta.1",
     "sass": "^1.77.5",
     "scss": "^0.2.4"
   },
   "scripts": {
-    "compile": "sass src/styles/scss:src/styles/css --watch"
+    "compile": "sass src/styles/scss:src/styles/css --watch",
+    "start": "json-server --watch db.json --port 5500"
   }
 }

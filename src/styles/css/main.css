@@ -459,6 +459,25 @@ button {
   transform: scale(1.2);
 }
 
+.cards__create {
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.cards__create a {
+  padding: 8px 16px;
+  border: none;
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease-in-out;
+  background-color: #ed2027;
+  text-decoration: none;
+}
+.cards__create a:hover {
+  background-color: #cf3710;
+}
+
 @keyframes fadeOut {
   from {
     opacity: 0;
@@ -468,6 +487,41 @@ button {
     opacity: 1;
     transform: translateY(0);
   }
+}
+.admin {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.admin form {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+.admin form input {
+  width: 30rem;
+  border: 1px solid #e3e3e3;
+  outline: none;
+  border-radius: 0.5rem;
+  padding: 8px 16px;
+}
+.admin form input:focus {
+  border: 1px solid #ed2027;
+}
+.admin form button {
+  border: 1px solid #e3e3e3;
+  padding: 8px 16px;
+  background-color: #ed2027;
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease-in-out;
+}
+.admin form button:hover {
+  background-color: #cf3710;
 }
 
 /*# sourceMappingURL=main.css.map */
