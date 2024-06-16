@@ -57,17 +57,17 @@
   ],
   "houseData": [
     {
+      "id": "7862",
       "imageSrc": "https://themesflat.co/html/homzen/images/home/house-1.jpg",
-      "property": "asd",
-      "location": "asd",
-      "bedroom": "asd",
-      "bathroom": "sad",
-      "size": "sad",
-      "author": "asd",
-      "payment": "asd",
-      "cash": "sad",
-      "authorName": "sda",
-      "authorImage": "asd"
+      "property": "Casa Lomas De Machalí Machas",
+      "location": " 33 Maple Street, San Francisco, California",
+      "bedroom": "3",
+      "bathroom": "2",
+      "size": "600",
+      "payment": "7250",
+      "cash": "SqFt",
+      "authorName": " Arlene McCoy",
+      "authorImage": "https://themesflat.co/html/homzen/images/avatar/avt-6.jpg"
     }
   ]
 }

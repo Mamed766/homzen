@@ -188,3 +188,21 @@
   color: white;
   background-color: red;
 }
+
+.add {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  a {
+    border-radius: 0.5rem;
+    color: white;
+    text-decoration: none;
+    padding: 4px 8px;
+    background-color: $red;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      background-color: $btnhov;
+    }
+  }
+}

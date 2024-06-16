@@ -142,9 +142,61 @@ getApiDataWithCallBack("houseData", (data) => {
                 <p>$${item.payment}<span>/${item.cash}</span></p>
               </div>
               </div>
-              <button class="deletee" data-id=${item.id}>Delete</button>
+              <button class="deletee" data-homeid=${item.id}>Delete</button>
 
           </div>
         `;
+
+    const DELETE_HOME = document.querySelectorAll(".deletee");
+
+    DELETE_HOME &&
+      DELETE_HOME.forEach((btn) =>
+        btn.addEventListener(
+          "click",
+
+          (e) => {
+            e.preventDefault();
+
+            let attrHomeId = e.target.getAttribute("data-homeid");
+
+            DeleteApiDataById("houseData", attrHomeId);
+          }
+        )
+      );
   });
 });
+
+const housesrc = document.querySelector("#housesrc");
+const property = document.querySelector("#property");
+const locationn = document.querySelector("#location");
+const bedroom = document.querySelector("#bedroom");
+const bathroom = document.querySelector("#bathroom");
+const size = document.querySelector("#size");
+// const author = document.querySelector("#author");
+const payment = document.querySelector("#payment");
+const cash = document.querySelector("#cash");
+const authorName = document.querySelector("#authorName");
+const authorImage = document.querySelector("#authorImage");
+
+const CREATE__HOUSE = document.querySelector("#createHouse");
+
+CREATE__HOUSE &&
+  CREATE__HOUSE.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const housesData = {
+      imageSrc: housesrc.value,
+      property: property.value,
+      location: locationn.value,
+      bedroom: bedroom.value,
+      bathroom: bathroom.value,
+      size: size.value,
+
+      payment: payment.value,
+      cash: cash.value,
+      authorName: authorName.value,
+      authorImage: authorImage.value,
+    };
+
+    PostApiData("houseData", housesData);
+  });
