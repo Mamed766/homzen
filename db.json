@@ -68,6 +68,71 @@
       "cash": "SqFt",
       "authorName": " Arlene McCoy",
       "authorImage": "https://themesflat.co/html/homzen/images/avatar/avt-6.jpg"
+    },
+    {
+      "id": "1cec",
+      "imageSrc": "https://themesflat.co/html/homzen/images/home/house-2.jpg",
+      "property": "Villa Del Mar Retreat, Malibu",
+      "location": " 72 Sunset Avenue, Los Angeles, California",
+      "bedroom": "2",
+      "bathroom": "2",
+      "size": "600",
+      "payment": "250",
+      "cash": "month",
+      "authorName": "Annete Black",
+      "authorImage": "https://themesflat.co/html/homzen/images/avatar/avt-7.jpg"
+    },
+    {
+      "id": "b8c7",
+      "imageSrc": "https://themesflat.co/html/homzen/images/home/house-3.jpg",
+      "property": "Rancho Vista Verde, Santa Barbara",
+      "location": " 33 Maple Street, San Francisco, California",
+      "bedroom": "4",
+      "bathroom": "2",
+      "size": "600",
+      "payment": "5050",
+      "cash": "SqFt",
+      "authorName": "Ralph Edwards",
+      "authorImage": "https://themesflat.co/html/homzen/images/avatar/avt-5.jpg"
+    },
+    {
+      "id": "9b56",
+      "imageSrc": "https://themesflat.co/html/homzen/images/home/house-4.jpg",
+      "property": "Sunset Heights Estate, Beverly Hills",
+      "location": " 1040 Ocean, Santa Monica, California",
+      "bedroom": "3",
+      "bathroom": "2",
+      "size": "600",
+      "payment": "250",
+      "cash": "SqFt",
+      "authorName": "Jacob Jones",
+      "authorImage": "https://themesflat.co/html/homzen/images/avatar/avt-8.jpg"
+    },
+    {
+      "id": "29c3",
+      "imageSrc": "https://themesflat.co/html/homzen/images/home/house-5.jpg",
+      "property": "Coastal Serenity Cottage",
+      "location": " 21 Hillside Drive, Beverly Hills, California",
+      "bedroom": "4",
+      "bathroom": "2",
+      "size": "600",
+      "payment": "7250",
+      "cash": "SqFt",
+      "authorName": "Kathryn Murphy",
+      "authorImage": "https://themesflat.co/html/homzen/images/avatar/avt-9.jpg"
+    },
+    {
+      "id": "61c2",
+      "imageSrc": "https://themesflat.co/html/homzen/images/home/house-6.jpg",
+      "property": "Lakeview Haven, Lake Tahoe",
+      "location": " 8 Broadway, Brooklyn, New York",
+      "bedroom": "2",
+      "bathroom": "2",
+      "size": "600",
+      "payment": "250",
+      "cash": "SqFt",
+      "authorName": "Floyd Miles",
+      "authorImage": "https://themesflat.co/html/homzen/images/avatar/avt-6.jpg"
     }
   ]
 }
