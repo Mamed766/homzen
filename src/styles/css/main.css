@@ -573,6 +573,7 @@ button {
 .houses__container--card {
   background-color: white;
   border-radius: 0.5rem;
+  border: 1px solid #e3e3e3;
   overflow: hidden;
   width: 25rem;
 }
@@ -650,6 +651,9 @@ button {
   gap: 1.5rem;
 }
 .houses__container--card__content--end {
+  border-top: 1px solid #e3e3e3;
+  margin-top: 1rem;
+  padding: 8px 4px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -663,6 +667,13 @@ button {
   border-radius: 2rem;
   height: 3rem;
   width: 3rem;
+}
+.houses__container--card__content--end p {
+  font-weight: bold;
+}
+.houses__container--card__content--end span {
+  color: gray;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=main.css.map */
