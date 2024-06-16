@@ -1,26 +1,31 @@
 {
   "data": [
     {
+      "id": 1,
       "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
       "city": "Semkir",
       "properties": "263"
     },
     {
+      "id": 2,
       "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
       "city": "Semkir",
       "properties": "263"
     },
     {
+      "id": 3,
       "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
       "city": "Semkir",
       "properties": "263"
     },
     {
+      "id": 4,
       "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
       "city": "Semkir",
       "properties": "263"
     },
     {
+      "id": 5,
       "imageSrc": "https://themesflat.co/html/homzen/images/location/lo-sm-1.jpg",
       "city": "Semkir",
       "properties": "263"
