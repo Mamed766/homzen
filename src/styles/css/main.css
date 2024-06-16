@@ -210,6 +210,11 @@ button {
   outline: none;
 }
 
+.active {
+  background-color: #ed2027;
+  color: white;
+}
+
 .introduction {
   background-image: url("https://themesflat.co/html/homzen/images/slider/slider-3.jpg");
   background-repeat: no-repeat;
@@ -524,6 +529,27 @@ button {
 }
 .admin form button:hover {
   background-color: #cf3710;
+}
+
+.houses__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.houses__content h3 {
+  color: #ed2027;
+}
+.houses__content button {
+  padding: 16px 32px;
+  border-radius: 0.5rem;
+  border: none;
+  transition: all 0.25s ease-in-out;
+}
+.houses__content button:hover {
+  background-color: #ed2027;
+  color: white;
 }
 
 /*# sourceMappingURL=main.css.map */

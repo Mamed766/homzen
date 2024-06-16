@@ -1,0 +1,23 @@
+@use "../utils" as *;
+
+.houses__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  h3 {
+    color: $red;
+  }
+  button {
+    padding: 16px 32px;
+    border-radius: 0.5rem;
+    border: none;
+    transition: all 0.25s ease-in-out;
+
+    &:hover {
+      background-color: $red;
+      color: white;
+    }
+  }
+}
