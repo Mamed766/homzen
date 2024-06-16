@@ -1,0 +1,107 @@
+@use "../utils/" as *;
+
+.cards {
+  padding: 2% 10%;
+}
+
+.cards__content {
+  display: flex;
+  justify-content: space-between;
+  &--first {
+    h3 {
+      color: $red;
+    }
+  }
+
+  &--second {
+    p {
+      cursor: pointer;
+      border-bottom: 3px solid $red;
+
+      i {
+        color: $red;
+      }
+      &:hover {
+        i {
+          animation: fadeOut 0.25s ease-in-out;
+        }
+      }
+    }
+  }
+}
+.cards__container {
+  margin-top: 1.5rem;
+  &--card {
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    width: 25rem;
+    background-color: #f7f7f7;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    .explore {
+      position: relative;
+      cursor: pointer;
+
+      @include underline;
+    }
+
+    &:hover .explore:before {
+      width: 100%;
+    }
+
+    i {
+      color: $red;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    button {
+      padding: 2px 4px;
+      border: none;
+      background-color: $red;
+      color: white;
+      transition: all 0.25s ease-in-out;
+      margin-top: 1rem;
+      border-radius: 0.5rem;
+    }
+
+    &__img {
+      img {
+        transition: all 0.25s ease-in-out;
+        transform: scale(1.1);
+        object-fit: cover;
+      }
+    }
+
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      background-color: $red;
+      color: white;
+
+      i {
+        color: white;
+        animation: fadeOut 0.25s ease-in-out;
+      }
+      button {
+        background-color: $btnhov;
+      }
+
+      img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
