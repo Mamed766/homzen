@@ -54,5 +54,20 @@
       "city": "Austin",
       "properties": "309"
     }
+  ],
+  "houseData": [
+    {
+      "imageSrc": "https://themesflat.co/html/homzen/images/home/house-1.jpg",
+      "property": "asd",
+      "location": "asd",
+      "bedroom": "asd",
+      "bathroom": "sad",
+      "size": "sad",
+      "author": "asd",
+      "payment": "asd",
+      "cash": "sad",
+      "authorName": "sda",
+      "authorImage": "asd"
+    }
   ]
 }

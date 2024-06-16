@@ -1,6 +1,7 @@
 let BaseURL = "http://localhost:5500";
 
 const cardsContainer = document.querySelector(".cards__container");
+const housesContainer = document.querySelector(".houses__container");
 
 const getApiDataWithCallBack = async (endPoint, cb) => {
   let response = await fetch(`${BaseURL}/${endPoint}`).then((res) =>
@@ -79,3 +80,71 @@ CREATE__CARD &&
 
     PostApiData("data", cardData);
   });
+
+//   FOR HOUSE
+getApiDataWithCallBack("houseData", (data) => {
+  data.map((item) => {
+    housesContainer.innerHTML += `
+          <div class="houses__container--card">
+            <div class="houses__container--card__img">
+              <img
+                class="image"
+                src="${item.imageSrc}"
+                alt=""
+              />
+              <div class="overlay"></div>
+              <div class="houses__container--card__img--content">
+                <div class="houses__container--card__img--content__top">
+                  <div
+                    class="houses__container--card__img--content__top--first"
+                  >
+                    <ul>
+                      <li class="featured">FEATURED</li>
+                      <li class="sale">FOR SALE</li>
+                    </ul>
+                  </div>
+                  <div
+                    class="houses__container--card__img--content__top--second"
+                  >
+                    <ul>
+                      <li><i class="fa-solid fa-money-bill-transfer"></i></li>
+                      <li><i class="fa-regular fa-heart"></i></li>
+                      <li><i class="fa-regular fa-eye"></i></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="houses__container--card__img--content__bottom">
+                  <button>STUDIO</button>
+                </div>
+              </div>
+            </div>
+            <div class="houses__container--card__content">
+              <h2>${item.property}</h2>
+              <p>
+                <i class="fa-solid fa-location-dot"></i> ${item.location}
+              </p>
+              <div class="houses__container--card__content--flex">
+                <p><i class="fa-solid fa-bed"></i> ${item.bedroom}</p>
+                <p><i class="fa-solid fa-bath"></i> ${item.bathroom}</p>
+                <p><i class="fa-solid fa-ruler"></i> ${item.size} ${item.cash}</p>
+              </div>
+            </div>
+            <div class="houses__container--card__content--end">
+              <div class="houses__container--card__content--end__img">
+                <img
+                  src="${item.authorImage}"
+                  alt=""
+                />
+                <p>${item.authorName}</p>
+              </div>
+              <div class="houses__container--card__content--end__payment">
+                <p>$${item.payment}<span>/${item.cash}</span></p>
+              </div>
+              </div>
+              <button class="deletee" data-id=${item.id}>Delete</button>
+
+          </div>
+        `;
+  });
+});
