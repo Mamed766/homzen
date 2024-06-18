@@ -1081,5 +1081,21 @@ button {
 .testimonial__card--second__slider div {
   padding-top: 1rem;
 }
+.testimonial__card--second__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.testimonial__card--second__dots--dot {
+  cursor: pointer;
+  border-radius: 3rem;
+  height: 0.5rem;
+  width: 0.5rem;
+  background-color: gray;
+}
+.testimonial__card--second__dots--dot:first-child {
+  background-color: #ed2027;
+}
 
 /*# sourceMappingURL=main.css.map */
