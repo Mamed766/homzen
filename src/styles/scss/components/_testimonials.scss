@@ -81,19 +81,31 @@
         font-size: 26px;
         font-weight: 500;
       }
-
+      overflow: hidden;
       &__icons {
         font-size: 20px;
         color: #f4d118;
       }
 
       &__slider {
-        border-top: 1px solid #e3e3e3;
+        // border-top: 1px solid #e3e3e3;
         display: flex;
         gap: 2rem;
-
+        animation: scroll 12s linear infinite;
         div {
           padding-top: 1rem;
+          cursor: pointer;
+
+          svg {
+            width: 10rem;
+            height: 3rem;
+            path {
+              transition: all 0.25s ease-in-out;
+            }
+            &:hover path {
+              fill: $red;
+            }
+          }
         }
       }
 
@@ -102,6 +114,16 @@
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
+
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 30px;
+          height: 2px;
+          width: 80rem;
+          background-color: #e3e3e3;
+        }
         &--dot {
           cursor: pointer;
           border-radius: 3rem;
@@ -114,5 +136,14 @@
         }
       }
     }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(-150%);
   }
 }

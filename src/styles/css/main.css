@@ -1063,6 +1063,7 @@ button {
   align-items: center;
   gap: 2rem;
   padding: 0 2rem;
+  overflow: hidden;
 }
 .testimonial__card--second p {
   text-align: center;
@@ -1074,18 +1075,38 @@ button {
   color: #f4d118;
 }
 .testimonial__card--second__slider {
-  border-top: 1px solid #e3e3e3;
   display: flex;
   gap: 2rem;
+  animation: scroll 12s linear infinite;
 }
 .testimonial__card--second__slider div {
   padding-top: 1rem;
+  cursor: pointer;
+}
+.testimonial__card--second__slider div svg {
+  width: 10rem;
+  height: 3rem;
+}
+.testimonial__card--second__slider div svg path {
+  transition: all 0.25s ease-in-out;
+}
+.testimonial__card--second__slider div svg:hover path {
+  fill: #ed2027;
 }
 .testimonial__card--second__dots {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  position: relative;
+}
+.testimonial__card--second__dots::after {
+  content: "";
+  position: absolute;
+  top: 30px;
+  height: 2px;
+  width: 80rem;
+  background-color: #e3e3e3;
 }
 .testimonial__card--second__dots--dot {
   cursor: pointer;
@@ -1096,6 +1117,15 @@ button {
 }
 .testimonial__card--second__dots--dot:first-child {
   background-color: #ed2027;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(900px);
+  }
+  100% {
+    transform: translateX(-150%);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
