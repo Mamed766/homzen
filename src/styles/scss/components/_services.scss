@@ -1,0 +1,108 @@
+@use "../utils/" as *;
+
+.services {
+  margin-top: 2rem;
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h3 {
+      color: $red;
+    }
+  }
+  p {
+    color: gray;
+    font-size: 14px;
+  }
+  &__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+    &--card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      gap: 2rem;
+      height: 25rem;
+      width: 25rem;
+      background-color: white;
+      border-radius: 1rem;
+
+      &:nth-child(2) {
+        background-color: $gray;
+        button {
+          background-color: $red;
+          border: 1px solid transparent;
+          color: white;
+        }
+      }
+
+      &:hover i {
+        animation: slideRight 1s forwards;
+      }
+
+      &:not(:hover) i {
+        animation: revertSpin 0.5s forwards;
+      }
+
+      &:hover {
+        button {
+          background-color: $red;
+          border: 1px solid transparent;
+          color: white;
+        }
+      }
+      transition: all 0.25s ease-in-out;
+
+      &:hover {
+        background-color: $gray;
+      }
+
+      &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5rem;
+        width: 5rem;
+        perspective: 1000px;
+        i {
+          transform-origin: center;
+          transition: transform 0.5s;
+          font-size: 40px;
+        }
+      }
+
+      button {
+        padding: 16px 32px;
+        border-radius: 0.3rem;
+        border: 1px solid black;
+        outline: none;
+        background-color: white;
+        transition: all 0.25s ease-in;
+      }
+    }
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes revertSpin {
+  0% {
+    transform: rotateY(360deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
