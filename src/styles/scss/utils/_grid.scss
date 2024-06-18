@@ -3,3 +3,9 @@
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 5.2rem;
 }
+
+.responsive-agent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  gap: 1rem;
+}
