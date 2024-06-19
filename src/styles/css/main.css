@@ -255,6 +255,7 @@ button {
   list-style: none;
 }
 .footer__container--start__icons ul li {
+  transition: all 0.25s ease-in-out;
   color: white;
   display: flex;
   justify-content: center;
@@ -263,11 +264,16 @@ button {
   width: 2.3rem;
   height: 2.3rem;
   background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.footer__container--start__icons ul li:hover {
+  background-color: #ed2027;
 }
 .footer__container--middle {
   display: flex;
   justify-content: space-between;
   padding-bottom: 4rem;
+  font-size: 14px;
 }
 .footer__container--middle ul {
   list-style: none;
@@ -362,6 +368,7 @@ button {
   border-top: 1px solid gray;
   padding-top: 1rem;
   display: flex;
+  font-size: 14px;
   justify-content: space-between;
   color: gray;
 }
