@@ -137,23 +137,25 @@ button {
 .navbar__second--list ul li {
   cursor: pointer;
 }
-.navbar__second--list ul li:before {
-  display: block;
+.navbar__second--list ul li::after {
   content: "";
-  width: 0;
-  height: 3px;
-  bottom: 0px;
-  left: 0;
-  z-index: 0;
+  display: block;
   position: absolute;
-  background-color: #ed2027;
-  transition: all 0.3s ease-in-out;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: width 0.3s ease, left 0.3s ease;
 }
 .navbar__second--list ul li:hover {
   background-position: 0%;
 }
-.navbar__second--list ul li:hover:before {
-  width: 100%;
+.navbar__second--list ul li:hover::after {
+  animation: underline-in 0.5s forwards;
+}
+.navbar__second--list ul li:not(:hover)::after {
+  animation: underline-out 1s forwards;
 }
 .navbar__second--list ul li ul {
   visibility: hidden;
