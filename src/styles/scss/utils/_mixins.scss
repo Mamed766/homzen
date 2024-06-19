@@ -29,3 +29,66 @@
     transition: all 0.3s ease-in-out;
   }
 }
+
+@mixin animatedUnderline {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: red;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  &:hover {
+    background-position: 0%;
+    &::after {
+      animation: underline-in 0.5s forwards;
+    }
+  }
+
+  &:not(:hover) {
+    &::after {
+      animation: underline-out 1s forwards;
+    }
+  }
+}
+
+@mixin animatedUnderlineWhite {
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+}
+
+@keyframes underline-in {
+  from {
+    width: 0;
+    left: 0;
+  }
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+
+@keyframes underline-out {
+  from {
+    width: 100%;
+    left: 0;
+  }
+  to {
+    width: 0;
+    left: 100%;
+  }
+}

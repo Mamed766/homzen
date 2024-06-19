@@ -34,6 +34,26 @@ button {
   gap: 0.8rem;
 }
 
+@keyframes underline-in {
+  from {
+    width: 0;
+    left: 0;
+  }
+  to {
+    width: 100%;
+    left: 0;
+  }
+}
+@keyframes underline-out {
+  from {
+    width: 100%;
+    left: 0;
+  }
+  to {
+    width: 0;
+    left: 100%;
+  }
+}
 .navbar__first {
   z-index: 99;
   position: fixed;
@@ -318,23 +338,25 @@ button {
 .footer__container--middle__second ul li {
   position: relative;
 }
-.footer__container--middle__second ul li:before {
-  display: block;
+.footer__container--middle__second ul li::after {
   content: "";
-  width: 0;
-  height: 0.1px;
-  bottom: 0px;
-  left: 0;
-  z-index: 0;
+  display: block;
   position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
   background-color: red;
-  transition: all 0.3s ease-in-out;
+  transition: width 0.3s ease, left 0.3s ease;
 }
 .footer__container--middle__second ul li:hover {
   background-position: 0%;
 }
-.footer__container--middle__second ul li:hover:before {
-  width: 100%;
+.footer__container--middle__second ul li:hover::after {
+  animation: underline-in 0.5s forwards;
+}
+.footer__container--middle__second ul li:not(:hover)::after {
+  animation: underline-out 1s forwards;
 }
 .footer__container--middle__third {
   display: flex;
@@ -356,23 +378,25 @@ button {
 .footer__container--middle__third ul li {
   position: relative;
 }
-.footer__container--middle__third ul li:before {
-  display: block;
+.footer__container--middle__third ul li::after {
   content: "";
-  width: 0;
-  height: 0.1px;
-  bottom: 0px;
-  left: 0;
-  z-index: 0;
+  display: block;
   position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
   background-color: red;
-  transition: all 0.3s ease-in-out;
+  transition: width 0.3s ease, left 0.3s ease;
 }
 .footer__container--middle__third ul li:hover {
   background-position: 0%;
 }
-.footer__container--middle__third ul li:hover:before {
-  width: 100%;
+.footer__container--middle__third ul li:hover::after {
+  animation: underline-in 0.5s forwards;
+}
+.footer__container--middle__third ul li:not(:hover)::after {
+  animation: underline-out 1s forwards;
 }
 .footer__container--middle__form {
   display: flex;
@@ -654,20 +678,25 @@ button {
   position: relative;
   cursor: pointer;
 }
-.cards__container--card .explore:before {
-  display: block;
+.cards__container--card .explore::after {
   content: "";
+  display: block;
+  position: absolute;
   width: 0;
   height: 2px;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
-  z-index: 0;
-  position: absolute;
   background-color: white;
-  transition: all 0.3s ease-in-out;
+  transition: width 0.3s ease, left 0.3s ease;
 }
-.cards__container--card:hover .explore:before {
-  width: 100%;
+.cards__container--card:hover .explore {
+  background-position: 0%;
+}
+.cards__container--card:hover .explore::after {
+  animation: underline-in 0.5s forwards;
+}
+.cards__container--card:not(:hover) .explore::after {
+  animation: underline-out 0.5s forwards;
 }
 .cards__container--card i {
   color: #ed2027;

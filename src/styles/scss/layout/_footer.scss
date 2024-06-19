@@ -99,14 +99,7 @@
 
           li {
             position: relative;
-            @include underlineRed;
-
-            &:hover {
-              background-position: 0%;
-              &:before {
-                width: 100%;
-              }
-            }
+            @include animatedUnderline;
           }
         }
       }
@@ -130,14 +123,20 @@
 
           li {
             position: relative;
-            @include underlineRed;
+            @include animatedUnderline;
 
-            &:hover {
-              background-position: 0%;
-              &:before {
-                width: 100%;
-              }
-            }
+            // &:hover {
+            //   background-position: 0%;
+            //   &::after {
+            //     animation: underline-in 0.5s forwards;
+            //   }
+            // }
+
+            // &:not(:hover) {
+            //   &::after {
+            //     animation: underline-out 0.5s forwards;
+            //   }
+            // }
           }
         }
       }

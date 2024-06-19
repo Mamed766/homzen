@@ -42,14 +42,25 @@
     .explore {
       position: relative;
       cursor: pointer;
-
-      @include underline;
+      @include animatedUnderlineWhite;
     }
 
-    &:hover .explore:before {
-      width: 100%;
+    &:hover .explore {
+      background-position: 0%;
+      &::after {
+        animation: underline-in 0.5s forwards;
+      }
     }
 
+    &:not(:hover) .explore {
+      &::after {
+        animation: underline-out 0.5s forwards;
+      }
+    }
+
+    // &:hover .explore:before {
+    //   width: 100%;
+    // }
     i {
       color: $red;
     }
