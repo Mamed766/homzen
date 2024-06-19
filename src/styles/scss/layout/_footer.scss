@@ -96,6 +96,18 @@
             cursor: pointer;
             color: gray;
           }
+
+          li {
+            position: relative;
+            @include underlineRed;
+
+            &:hover {
+              background-position: 0%;
+              &:before {
+                width: 100%;
+              }
+            }
+          }
         }
       }
 
@@ -114,6 +126,18 @@
           li {
             cursor: pointer;
             color: gray;
+          }
+
+          li {
+            position: relative;
+            @include underlineRed;
+
+            &:hover {
+              background-position: 0%;
+              &:before {
+                width: 100%;
+              }
+            }
           }
         }
       }
@@ -168,6 +192,10 @@
           display: flex;
           li {
             cursor: pointer;
+            transition: all 0.25s ease-in-out;
+            &:hover {
+              color: $red;
+            }
           }
         }
       }

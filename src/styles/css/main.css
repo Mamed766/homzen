@@ -315,6 +315,27 @@ button {
   cursor: pointer;
   color: gray;
 }
+.footer__container--middle__second ul li {
+  position: relative;
+}
+.footer__container--middle__second ul li:before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0.1px;
+  bottom: 0px;
+  left: 0;
+  z-index: 0;
+  position: absolute;
+  background-color: red;
+  transition: all 0.3s ease-in-out;
+}
+.footer__container--middle__second ul li:hover {
+  background-position: 0%;
+}
+.footer__container--middle__second ul li:hover:before {
+  width: 100%;
+}
 .footer__container--middle__third {
   display: flex;
   flex-direction: column;
@@ -331,6 +352,27 @@ button {
 .footer__container--middle__third ul li {
   cursor: pointer;
   color: gray;
+}
+.footer__container--middle__third ul li {
+  position: relative;
+}
+.footer__container--middle__third ul li:before {
+  display: block;
+  content: "";
+  width: 0;
+  height: 0.1px;
+  bottom: 0px;
+  left: 0;
+  z-index: 0;
+  position: absolute;
+  background-color: red;
+  transition: all 0.3s ease-in-out;
+}
+.footer__container--middle__third ul li:hover {
+  background-position: 0%;
+}
+.footer__container--middle__third ul li:hover:before {
+  width: 100%;
 }
 .footer__container--middle__form {
   display: flex;
@@ -379,6 +421,10 @@ button {
 }
 .footer__container--end__second ul li {
   cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+.footer__container--end__second ul li:hover {
+  color: #ed2027;
 }
 
 button {
