@@ -13,7 +13,7 @@ button {
 .responsive-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 5.2rem;
+  gap: 5.1rem;
 }
 
 .responsive-cards-grid {
@@ -25,6 +25,12 @@ button {
 .responsive-agent-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  gap: 1rem;
+}
+
+.responsive-estate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
 }
 
@@ -1254,6 +1260,47 @@ button {
 .overlay__agent--icons ul li i {
   transition: all 0.25s ease-in-out;
   color: gray;
+}
+
+.estates {
+  padding: 2% 10%;
+}
+.estates__title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.estates__container--card {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+.estates__container--card__img {
+  position: relative;
+  width: 17rem;
+}
+.estates__container--card__img img {
+  border-radius: 1rem;
+  height: 25rem;
+  width: 17rem;
+}
+.estates__container--card__img--content {
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 1rem;
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.estates__container--card__img--content__date {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+  width: 140px;
+  background-color: #ed2027;
+  padding: 0.5rem;
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */

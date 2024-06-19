@@ -1,0 +1,45 @@
+@use "../utils" as *;
+.estates {
+  padding: 2% 10%;
+  &__title {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  &__container {
+    &--card {
+      border-radius: 1rem;
+      overflow: hidden;
+      &__img {
+        position: relative;
+        width: 17rem;
+        img {
+          border-radius: 1rem;
+          height: 25rem;
+          width: 17rem;
+        }
+
+        &--content {
+          position: absolute;
+          bottom: 0;
+          padding: 1rem 1rem;
+          color: white;
+          &__date {
+            display: flex;
+            justify-content: center;
+            color: whitesmoke;
+            width: 140px;
+            background-color: $red;
+            padding: 0.5rem;
+            font-size: 10px;
+          }
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 .responsive-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  gap: 5.2rem;
+  gap: 5.1rem;
 }
 
 .responsive-cards-grid {
@@ -13,5 +13,11 @@
 .responsive-agent-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  gap: 1rem;
+}
+
+.responsive-estate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1rem;
 }
