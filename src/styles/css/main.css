@@ -30,8 +30,8 @@ button {
 
 .responsive-estate-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 0.8rem;
 }
 
 .navbar__first {
@@ -1269,21 +1269,25 @@ button {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.estates__title h3 {
+  color: #ed2027;
 }
 .estates__container--card {
   cursor: pointer;
   border-radius: 1rem;
   overflow: hidden;
-  width: 17rem;
+  width: 18rem;
 }
 .estates__container--card__img {
   position: relative;
-  width: 17rem;
+  width: 18rem;
 }
 .estates__container--card__img img {
   border-radius: 1rem;
   height: 25rem;
-  width: 17rem;
+  width: 100%;
   transition: all 0.25s ease-in-out;
   object-fit: cover;
 }
